@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI EstateFlow Demo | NEXORA.AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">N</div><div><b>NEXORA<span>.AI</span></b><small>ESTATEFLOW AI</small></div></div>
+    <div class="workspace"><span class="workspace-dot"></span><div><b id="builderName">UrbanNest Developers</b><small>Builder workspace</small></div><span class="chevron">⌄</span></div>
+    <div class="nav-label">WORKSPACE</div>
+    <nav id="mainNav">
+      <button class="nav-item active" data-page="overview"><span>◫</span> Overview</button>
+      <button class="nav-item" data-page="leads"><span>◎</span> Lead CRM <em id="leadNavCount">0</em></button>
+      <button class="nav-item" data-page="inventory"><span>▦</span> Property inventory</button>
+      <button class="nav-item" data-page="pipeline"><span>⌁</span> Sales pipeline</button>
+      <button class="nav-item" data-page="visits"><span>◷</span> Site visits</button>
+      <button class="nav-item" data-page="bookings"><span>▣</span> Bookings & payments</button>
+      <div class="nav-label nav-spaced">GROWTH & INTELLIGENCE</div>
+      <button class="nav-item" data-page="assistant"><span>✧</span> AI sales assistant <i class="live-dot"></i></button>
+      <button class="nav-item" data-page="automations"><span>⟳</span> Automations</button>
+      <button class="nav-item" data-page="analytics"><span>▥</span> Analytics & reports</button>
+      <div class="nav-label nav-spaced">MANAGEMENT</div>
+      <button class="nav-item" data-page="team"><span>♙</span> Team & partners</button>
+      <button class="nav-item" data-page="settings"><span>⚙</span> Settings</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><b>Need a hand?</b><p>Explore the EstateFlow workspace and learn how to automate your sales.</p><button onclick="showToast('Help centre is part of the next release.')">Visit help centre ↗</button></div><div class="profile"><div class="avatar">DR</div><div><b>Demo Admin</b><small>Builder Administrator</small></div><span>•••</span></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="breadcrumb"><a href="../../index.html" style="color:#6377f5;text-decoration:none;font-weight:700">← NEXORA.AI</a> <span>/</span> AI EstateFlow <span>/</span> <b id="crumb">Overview</b></div><div class="top-actions"><div class="search-global">⌕ <input id="globalSearch" placeholder="Search leads, projects..." /></div><button class="icon-btn" title="Notifications" onclick="showToast('You are all caught up.')">♧<i></i></button><div class="top-avatar">DR</div></div></header>
+    <section class="page-content" id="pageContent"></section>
+    <footer>© 2026 NEXORA.AI <span>EstateFlow AI · Builder operating system</span><span class="env-pill">INTERACTIVE DEMO · SAMPLE DATA</span></footer>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div>
+<script src="app.js"></script>
+</body>
+</html>

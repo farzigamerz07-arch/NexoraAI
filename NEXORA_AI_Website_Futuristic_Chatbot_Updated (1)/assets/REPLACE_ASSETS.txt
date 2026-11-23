@@ -1,0 +1,5 @@
+IMAGE / VIDEO REPLACEMENT GUIDE
+- Homepage hero video: replace hero-background.mp4 (keep same filename).
+- Homepage poster image: add hero-poster.jpg and it will be used as the video poster.
+- Other visual areas currently use CSS-generated illustrations, so the site remains complete even without photos.
+- To add photos, place them in this assets folder and update the relevant CSS background or HTML image element.
